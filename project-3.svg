@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
+    <filter id="p3Shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background Canvas -->
+  <rect width="600" height="360" fill="#090d16" />
+
+  <!-- Browser Window Frame Mockup -->
+  <g transform="translate(40, 30)" filter="url(#p3Shadow)">
+    <rect width="520" height="300" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Titlebar -->
+    <path d="M0 14 C0 6.27 6.27 0 14 0 L506 0 C513.73 0 520 6.27 520 14 L520 38 L0 38 Z" fill="#020617" />
+    <circle cx="24" cy="19" r="5" fill="#ef4444" />
+    <circle cx="42" cy="19" r="5" fill="#eab308" />
+    <circle cx="60" cy="19" r="5" fill="#22c55e" />
+    <text x="85" y="23" font-family="sans-serif" font-weight="bold" font-size="11" fill="#f8fafc">NovaPay &bull; Realtime Analytics</text>
+
+    <!-- Stat Metric Cards -->
+    <g transform="translate(20, 50)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="150" height="64" rx="8" fill="#1e293b" />
+      <text x="14" y="20" font-family="sans-serif" font-size="9" fill="#94a3b8">TOTAL REVENUE</text>
+      <text x="14" y="44" font-family="sans-serif" font-weight="bold" font-size="16" fill="#ffffff">$148,290.40</text>
+      <text x="14" y="58" font-family="sans-serif" font-size="8" fill="#34d399">+18.4% vs last month</text>
+
+      <!-- Card 2 -->
+      <rect x="165" y="0" width="150" height="64" rx="8" fill="#1e293b" />
+      <text x="179" y="20" font-family="sans-serif" font-size="9" fill="#94a3b8">ACTIVE TRANSACTIONS</text>
+      <text x="179" y="44" font-family="sans-serif" font-weight="bold" font-size="16" fill="#38bdf8">14,892</text>
+      <text x="179" y="58" font-family="sans-serif" font-size="8" fill="#34d399">+99.98% success rate</text>
+
+      <!-- Card 3 -->
+      <rect x="330" y="0" width="150" height="64" rx="8" fill="#1e293b" />
+      <text x="344" y="20" font-family="sans-serif" font-size="9" fill="#94a3b8">AVG SETTLEMENT</text>
+      <text x="344" y="44" font-family="sans-serif" font-weight="bold" font-size="16" fill="#a78bfa">420 ms</text>
+      <text x="344" y="58" font-family="sans-serif" font-size="8" fill="#38bdf8">Ultra low latency</text>
+    </g>
+
+    <!-- Main Chart Window -->
+    <g transform="translate(20, 126)">
+      <rect width="480" height="154" rx="8" fill="#131e32" />
+      <text x="16" y="24" font-family="sans-serif" font-weight="bold" font-size="11" fill="#f8fafc">Volume Trajectory (Last 30 Days)</text>
+      
+      <!-- Chart Area -->
+      <path d="M 30 120 Q 80 110, 130 90 T 230 75 T 330 45 T 430 30 L 430 135 L 30 135 Z" fill="url(#chartGrad)" />
+      <path d="M 30 120 Q 80 110, 130 90 T 230 75 T 330 45 T 430 30" fill="none" stroke="#10b981" stroke-width="3" />
+      
+      <!-- Chart Points -->
+      <circle cx="130" cy="90" r="4" fill="#ffffff" stroke="#10b981" stroke-width="2" />
+      <circle cx="230" cy="75" r="4" fill="#ffffff" stroke="#10b981" stroke-width="2" />
+      <circle cx="330" cy="45" r="4" fill="#ffffff" stroke="#10b981" stroke-width="2" />
+      <circle cx="430" cy="30" r="4" fill="#ffffff" stroke="#10b981" stroke-width="2" />
+      
+      <!-- Target Tooltip -->
+      <rect x="300" y="15" width="60" height="20" rx="4" fill="#10b981" />
+      <text x="330" y="29" font-family="sans-serif" font-weight="bold" font-size="9" fill="#042f2e" text-anchor="middle">$128.4k</text>
+    </g>
+  </g>
+</svg>

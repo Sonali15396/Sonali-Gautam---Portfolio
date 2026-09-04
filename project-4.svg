@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="p4Shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background Canvas -->
+  <rect width="600" height="360" fill="#030712" />
+
+  <!-- Browser Window Frame Mockup -->
+  <g transform="translate(40, 30)" filter="url(#p4Shadow)">
+    <rect width="520" height="300" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Titlebar -->
+    <path d="M0 14 C0 6.27 6.27 0 14 0 L506 0 C513.73 0 520 6.27 520 14 L520 38 L0 38 Z" fill="#020617" />
+    <circle cx="24" cy="19" r="5" fill="#ef4444" />
+    <circle cx="42" cy="19" r="5" fill="#eab308" />
+    <circle cx="60" cy="19" r="5" fill="#22c55e" />
+    <text x="85" y="23" font-family="sans-serif" font-weight="bold" font-size="11" fill="#f8fafc">DevPulse &bull; Microservices Health &amp; Logs</text>
+
+    <!-- Cluster Nodes Overview -->
+    <g transform="translate(20, 50)">
+      <rect width="480" height="95" rx="8" fill="#131e32" />
+      <text x="16" y="22" font-family="sans-serif" font-weight="bold" font-size="10" fill="#94a3b8">CLUSTER CLOUD INFRASTRUCTURE (US-EAST-1)</text>
+      
+      <!-- Node 1 -->
+      <g transform="translate(16, 32)">
+        <rect width="105" height="50" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#10b981" />
+        <text x="26" y="21" font-family="sans-serif" font-weight="bold" font-size="9" fill="#ffffff">auth-service</text>
+        <text x="16" y="38" font-family="monospace" font-size="8" fill="#94a3b8">CPU: 18% &bull; 120MB</text>
+      </g>
+      <!-- Node 2 -->
+      <g transform="translate(131, 32)">
+        <rect width="105" height="50" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#10b981" />
+        <text x="26" y="21" font-family="sans-serif" font-weight="bold" font-size="9" fill="#ffffff">gateway-api</text>
+        <text x="16" y="38" font-family="monospace" font-size="8" fill="#94a3b8">CPU: 32% &bull; 240MB</text>
+      </g>
+      <!-- Node 3 -->
+      <g transform="translate(246, 32)">
+        <rect width="105" height="50" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#10b981" />
+        <text x="26" y="21" font-family="sans-serif" font-weight="bold" font-size="9" fill="#ffffff">payment-worker</text>
+        <text x="16" y="38" font-family="monospace" font-size="8" fill="#94a3b8">CPU: 24% &bull; 180MB</text>
+      </g>
+      <!-- Node 4 -->
+      <g transform="translate(361, 32)">
+        <rect width="105" height="50" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#10b981" />
+        <text x="26" y="21" font-family="sans-serif" font-weight="bold" font-size="9" fill="#ffffff">redis-cluster</text>
+        <text x="16" y="38" font-family="monospace" font-size="8" fill="#94a3b8">MEM: 64% &bull; 1.2GB</text>
+      </g>
+    </g>
+
+    <!-- Terminal Log Stream -->
+    <g transform="translate(20, 155)">
+      <rect width="480" height="125" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <rect x="0" y="0" width="480" height="24" rx="8" fill="#111827" />
+      <text x="14" y="16" font-family="sans-serif" font-size="9" fill="#94a3b8">STREAMING PRODUCTION LOGS (TAIL -F)</text>
+
+      <text x="14" y="42" font-family="monospace" font-size="8.5" fill="#34d399">[17:20:01] INFO  auth-service: JWT Token validated successfully (user_id=8910)</text>
+      <text x="14" y="58" font-family="monospace" font-size="8.5" fill="#38bdf8">[17:20:02] INFO  gateway-api: Incoming POST /api/v1/orders 200 OK (38ms)</text>
+      <text x="14" y="74" font-family="monospace" font-size="8.5" fill="#a78bfa">[17:20:03] INFO  payment-worker: Webhook processed with Stripe status=succeeded</text>
+      <text x="14" y="90" font-family="monospace" font-size="8.5" fill="#e2e8f0">[17:20:04] INFO  redis-cluster: Cache hit for key product_catalog_v2</text>
+      <text x="14" y="106" font-family="monospace" font-size="8.5" fill="#10b981">● SYSTEM HEALTHY: 0 ERRORS REPORTED</text>
+    </g>
+  </g>
+</svg>
