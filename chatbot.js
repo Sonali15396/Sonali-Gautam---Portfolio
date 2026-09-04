@@ -470,26 +470,72 @@
       }
     };
 
-    // Handle User Message Submission
-    const handleUserSubmit = (userText) => {
-      const text = (userText || input.value || '').trim();
-      if (!text || isTyping) return;
+    // Conversation history for the AI
+let chatHistory = [];
 
-      // Add user message
-      appendMessage('user', escapeHTML(text));
-      input.value = '';
+// Handle User Message Submission
+const handleUserSubmit = async (userText) => {
+  const text = (userText || input.value || '').trim();
 
-      // Show typing indicator
-      showTyping();
+  if (!text || isTyping) return;
 
-      // Natural response delay (400ms - 750ms)
-      const delay = Math.min(750, Math.max(400, text.length * 15));
-      setTimeout(() => {
-        hideTyping();
-        const response = matchIntent(text);
-        appendMessage('bot', response.text, response.actions);
-      }, delay);
-    };
+  // Add user message to the UI
+  appendMessage('user', escapeHTML(text));
+  input.value = '';
+
+  // Show typing indicator
+  showTyping();
+
+  try {
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: text,
+        history: chatHistory
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || 'Something went wrong.');
+    }
+
+    const reply = data.reply || "Sorry, I couldn't generate a response.";
+
+    // Save conversation for context
+    chatHistory.push({
+      role: 'user',
+      content: text
+    });
+
+    chatHistory.push({
+      role: 'assistant',
+      content: reply
+    });
+
+    // Keep only the latest 10 messages
+    chatHistory = chatHistory.slice(-10);
+
+    hideTyping();
+
+    // Display AI response
+    appendMessage('bot', escapeHTML(reply));
+
+  } catch (error) {
+    console.error('Chatbot error:', error);
+
+    hideTyping();
+
+    appendMessage(
+      'bot',
+      "Sorry, I'm having trouble connecting to my AI service right now. Please try again in a moment."
+    );
+  }
+};
 
     // Form Submit Event
     form.addEventListener('submit', (e) => {

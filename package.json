@@ -17,5 +17,8 @@
     "javascript"
   ],
   "author": "Alex Morgan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^7.10.0"
+  }
 }
