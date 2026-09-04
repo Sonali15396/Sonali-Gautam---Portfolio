@@ -1,0 +1,21 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive, and ready-to-deploy personal portfolio website application.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "developer-portfolio",
+    "responsive-website",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Alex Morgan",
+  "license": "MIT"
+}

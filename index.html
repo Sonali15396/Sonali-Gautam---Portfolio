@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
+  <!-- ========================================================================
+       SEO & METADATA
+       ======================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Sonali Gautam | Full Stack Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Sonali Gautam - Full Stack Software Engineer specializing in modern web applications, scalable APIs, and intuitive UI/UX design.">
+  <meta name="keywords" content="Software Engineer, Full Stack Developer, Web Development, React, Node.js, JavaScript, Python, Portfolio">
+  <meta name="author" content="Sonali Gautam">
+
+  <!-- Open Graph / Facebook / LinkedIn Social Share Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sonali Gautam | Full Stack Software Engineer Portfolio">
+  <meta property="og:description" content="Explore my software engineering projects, academic background, technical skills, and resume.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Web Fonts (Plus Jakarta Sans & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SECTION 1: HEADER & NAVIGATION
+       Features: Logo, Navigation links, Theme Toggle, Resume CTA, Mobile Hamburger
+       ======================================================================== -->
+  <header class="header" id="header" role="banner">
+    <div class="container navbar">
+      <!-- Brand Logo / Name -->
+      <a href="#home" class="nav-brand" aria-label="Sonali Gautam - Home">
+        <img src="assets/images/favicon.svg" alt="SG Logo" class="nav-brand-logo" width="38" height="38">
+        <span>Sonali Gautam</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons: Theme Switcher & Resume & Mobile Menu -->
+      <div class="nav-actions">
+        <!-- Dark/Light Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Direct Resume Download Button in Navbar -->
+        <a href="assets/docs/resume.pdf" class="btn btn-outline btn-sm nav-resume-btn download-resume-trigger" download="Sonali_Gautam_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Resume
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 2: HERO SECTION
+         Features: Prominent Name, Animated Typewriter Subtitle, Bio Pitch,
+                   CTAs (Projects, Resume, Contact), Clickable Social Links
+         ======================================================================== -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="container hero-grid">
+        <!-- Hero Content Column -->
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            I turn ideas into useful digital experiences
+          </div>
+
+          <p class="hero-greeting">Hello, world! I am</p>
+          
+          <!-- Name Prominently Displayed on Homepage -->
+          <h1 class="hero-name">
+            <span class="gradient-text">Sonali Gautam</span>
+          </h1>
+
+          <!-- Dynamic Typewriter Title -->
+          <div class="hero-title-box">
+            <span id="typewriter-text"></span><span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            I love turning ideas into digital experiences that are not only functional but also intuitive and engaging. From developing applications to exploring new technologies, I’m constantly learning, experimenting, and finding creative ways to solve real-world problems through code.
+          </p>
+
+          <!-- Call-To-Action Buttons -->
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Explore Projects
+            </a>
+
+            <!-- Downloadable Resume PDF -->
+            <a href="assets/docs/resume.pdf" class="btn btn-outline download-resume-trigger" download="Sonali_Gautam_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Download CV / Resume
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Clickable Social Icons (LinkedIn, GitHub, Email) -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-icons-group">
+              <!-- LinkedIn Profile Link -->
+              <a href="https://www.linkedin.com/in/sonaligautam15" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- GitHub Profile Link -->
+              <a href="https://github.com/Sonali15396" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <!-- Email Quick Link -->
+              <a href="mailto:gautamsonali326@gmail.com" class="social-link" aria-label="Email Sonali Gautam">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: ABOUT SECTION
+         Features: Personal introduction, professional background, core values,
+                   stats counters, and quick biographical details
+         ======================================================================== -->
+    <section class="section" id="about" aria-label="About Me">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Building Today. Learning Every Day. Creating for Tomorrow.</h2>
+          <p class="section-subtitle">Passionate about building meaningful solutions, exploring new technologies, and continuously improving my skills.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Profile Quick Info Card -->
+          <div class="about-card">
+            <div class="about-profile-header">
+              <div>
+                <h3 class="about-info-title">Sonali Gautam</h3>
+                <p class="about-info-sub">Aspiring Software Engineer | Data Analytics Enthusiast</p>
+              </div>
+            </div>
+
+            <div class="about-details-list">
+              <div class="about-detail-item">
+                <span class="about-detail-label">Education</span>
+                <span class="about-detail-value">B.Tech - Information Science and Engineering</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="about-detail-label">Year</span>
+                <span class="about-detail-value">4th Year • 7th Semester</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="about-detail-label">Interests</span>
+                <span class="about-detail-value">Software Development • Data Analytics • Problem Solving</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="about-detail-label">Focus</span>
+                <span class="about-detail-value">Web Development • Data Analysis Building Real-World Projects</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="about-detail-label">Status</span>
+                <span class="about-detail-value" style="color: var(--accent-emerald);">Open to Internships & Job Opportunities</span>
+              </div>
+            </div>
+
+            <!-- Download CV Shortcut -->
+            <a href="assets/docs/resume.pdf" class="btn btn-outline btn-sm download-resume-trigger" style="width: 100%;" download="Sonali_Gautam_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Full Curriculum Vitae (PDF)
+            </a>
+          </div>
+
+          <!-- Right: Narrative Bio & Key Stats -->
+          <div class="about-narrative">
+            <h3>Turning Ideas into Real-World Solutions</h3>
+            <p>
+              I’m a technology enthusiast and aspiring software developer with a strong interest in building practical solutions to real-world problems. My journey in technology has involved exploring web development, programming, and data analytics through hands-on projects and continuous learning.
+            </p>
+            <p>
+              I enjoy turning ideas into functional, user-focused solutions while strengthening my skills in problem-solving, development, and data-driven thinking. I’m always eager to learn new technologies, take on challenging projects, and collaborate with others. I’m currently looking for opportunities where I can contribute my skills, gain real-world experience, and grow as a software professional.
+            </p>
+            <p>
+              I believe that every project is an opportunity to learn, improve, and create something valuable. I’m adaptable, curious, and committed to continuously developing both my technical and professional skills while contributing positively to the teams and projects I work with.
+            </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: EDUCATION SECTION
+         Features: Academic timeline, degrees, institution, coursework, honors
+         ======================================================================== -->
+    <section class="section" id="education" aria-label="Education and Academic Background">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header">
+          <span class="section-badge">Academic Journey</span>
+          <h2 class="section-title">Education &amp; Learning</h2>
+          <p class="section-subtitle">Every stage of my education has helped shape the way I learn, think, and solve problems.</p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="education-timeline">
+          
+          <!-- Timeline Item 1: Bachelor's Degree -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Bachelor of Technology in Information Science & Engineering</h3>
+                <span class="timeline-badge">2023 – 2027</span>
+              </div>
+              <div class="timeline-institution">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                JAIN (Deemed-to-be) University • Bengaluru, Karnataka, India
+              </div>
+              <p class="timeline-description">
+                Developing strong technical and problem-solving skills through academic learning, hands-on projects, and continuous exploration of emerging technologies. (GPA: 8.3 / 10)</strong>
+              </p>
+              <div class="timeline-highlights">
+                <span class="highlight-pill">Data Structures &amp; Algorithms</span>
+                <span class="highlight-pill">Database Management System</span>
+                <span class="highlight-pill">Computer Networks</span>
+                <span class="highlight-pill">Software Engineering</span>
+                <span class="highlight-pill">Web Development</span>
+                <span class="highlight-pill">Operating Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Cloud Certification -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Class XII (Higher Secondary Education)</h3>
+                <span class="timeline-badge">2021 – 2023</span>
+              </div>
+              <div class="timeline-institution">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Sri Chaitanya Techno School • Bengaluru, Karnataka, India
+              </div>
+              <p class="timeline-description">
+                Completed my higher secondary education with a focus on building a strong academic foundation and preparing for further studies in technology and engineering.
+              </p>
+              <div class="timeline-highlights">
+                <span class="highlight-pill">Physics</span>
+                <span class="highlight-pill">Chemistry</span>
+                <span class="highlight-pill">Mathematics</span>
+                <span class="highlight-pill">Information Practices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Specialized Specialization -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Class X (Secondary Education)</h3>
+                <span class="timeline-badge">2021</span>
+              </div>
+              <div class="timeline-institution">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                SJR Kengeri Public School • Bengaluru, Karnataka, India
+              </div>
+              <p class="timeline-description">
+                Completed my secondary education, building a strong academic foundation while developing curiosity, discipline, and a passion for learning.
+              </p>
+              <div class="timeline-highlights">
+                <span class="highlight-pill">Academic Foundation</span>
+                <span class="highlight-pill">Logical Thinking</span>
+                <span class="highlight-pill">Problem Solving</span>
+                <span class="highlight-pill">Discipline</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+     SECTION 5: SKILLS SECTION
+     Features: Technical & Professional Skills categorized with visual icons
+     ======================================================================== -->
+<section class="section" id="skills" aria-label="Technical and Professional Skills">
+
+  <div class="container">
+
+    <!-- ================= SKILLS HEADING ================= -->
+    <div class="section-header">
+      <span class="section-badge">Competencies</span>
+
+      <h2 class="section-title">
+        Skills &amp; Technologies
+      </h2>
+
+      <p class="section-subtitle">
+        The technical skills, tools, and technologies I use to build projects,
+        solve problems, and create practical digital solutions.
+      </p>
+    </div>
+
+
+    <!-- ================= SKILLS GRID ================= -->
+    <div class="skills-grid">
+
+
+      <!-- ================================================================
+           1. PROGRAMMING LANGUAGES
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon">
+            &lt;/&gt;
+          </div>
+
+          <h3>Programming Languages</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- Python -->
+          <div class="skill-row">
+            <i class="devicon-python-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Python</strong>
+              <span>General purpose programming</span>
+            </div>
+          </div>
+
+
+          <!-- Java -->
+          <div class="skill-row">
+            <i class="devicon-java-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Java</strong>
+              <span>Object-oriented programming</span>
+            </div>
+          </div>
+
+
+          
+          
+
+
+          <!-- SQL -->
+          <div class="skill-row">
+            <i class="devicon-mysql-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>SQL</strong>
+              <span>Database queries</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ================================================================
+           2. AI / ML TECHNOLOGIES
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon ai-icon">
+            ✦
+          </div>
+
+          <h3>AI / ML Technologies</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- Python for ML -->
+          <div class="skill-row">
+            <i class="devicon-python-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Python for ML</strong>
+              <span>Machine learning development</span>
+            </div>
+          </div>
+
+
+          <!-- NumPy -->
+          <div class="skill-row">
+            <i class="devicon-numpy-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>NumPy</strong>
+              <span>Numerical computing</span>
+            </div>
+          </div>
+
+
+          <!-- Pandas -->
+          <div class="skill-row">
+            <i class="devicon-pandas-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Pandas</strong>
+              <span>Data manipulation</span>
+            </div>
+          </div>
+
+
+          <!-- Scikit-learn -->
+          <div class="skill-row">
+            <i class="devicon-scikitlearn-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Scikit-learn</strong>
+              <span>Machine learning</span>
+            </div>
+          </div>
+
+
+          <!-- Matplotlib -->
+          <div class="skill-row">
+            <i class="devicon-matplotlib-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Matplotlib</strong>
+              <span>Data visualization</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ================================================================
+           3. WEB TECHNOLOGIES
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon web-icon">
+            ◉
+          </div>
+
+          <h3>Web Technologies</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- HTML -->
+          <div class="skill-row">
+            <i class="devicon-html5-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>HTML5</strong>
+              <span>Structure and content</span>
+            </div>
+          </div>
+
+
+          <!-- CSS -->
+          <div class="skill-row">
+            <i class="devicon-css3-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>CSS3</strong>
+              <span>Styling & responsive design</span>
+            </div>
+          </div>
+
+
+          <!-- JavaScript -->
+          <div class="skill-row">
+            <i class="devicon-javascript-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>JavaScript</strong>
+              <span>Interactive web applications</span>
+            </div>
+          </div>
+
+
+          <!-- React -->
+          <div class="skill-row">
+            <i class="devicon-react-original colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>React.js</strong>
+              <span>Frontend development</span>
+            </div>
+          </div>
+
+
+          <!-- REST APIs -->
+          <div class="skill-row">
+            <span class="api-symbol skill-tech-icon">API</span>
+
+            <div class="skill-info">
+              <strong>REST APIs</strong>
+              <span>Web service integration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ================================================================
+           4. DATABASES
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon database-icon">
+            ◫
+          </div>
+
+          <h3>Databases</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- MySQL -->
+          <div class="skill-row">
+            <i class="devicon-mysql-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>MySQL</strong>
+              <span>Relational database</span>
+            </div>
+          </div>
+
+
+          <!-- MongoDB -->
+          <div class="skill-row">
+            <i class="devicon-mongodb-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>MongoDB</strong>
+              <span>NoSQL database</span>
+            </div>
+          </div>
+
+
+          <!-- PostgreSQL -->
+          <div class="skill-row">
+            <i class="devicon-postgresql-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>PostgreSQL</strong>
+              <span>Relational database</span>
+            </div>
+          </div>
+
+
+          <!-- Database Design -->
+          <div class="skill-row">
+            <div class="skill-tech-icon">
+              ▣
+            </div>
+
+            <div class="skill-info">
+              <strong>Database Design</strong>
+              <span>Schema and data modeling</span>
+            </div>
+          </div>
+
+
+          <!-- Cassandra -->
+          <div class="skill-row">
+            <i class="devicon-cassandra-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Cassandra</strong>
+              <span>Distributed NoSQL database</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ================================================================
+           5. TOOLS & CLOUD
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon cloud-icon">
+            ☁
+          </div>
+
+          <h3>Tools &amp; Cloud</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- Git -->
+          <div class="skill-row">
+            <i class="devicon-git-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Git</strong>
+              <span>Version control</span>
+            </div>
+          </div>
+
+
+          <!-- GitHub -->
+          <div class="skill-row">
+            <i class="devicon-github-original colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>GitHub</strong>
+              <span>Code collaboration</span>
+            </div>
+          </div>
+
+
+          <!-- Docker -->
+          <div class="skill-row">
+            <i class="devicon-docker-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Docker</strong>
+              <span>Containerization</span>
+            </div>
+          </div>
+
+
+          <!-- Netlify -->
+          <div class="skill-row">
+            <i class="devicon-netlify-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Netlify</strong>
+              <span>Website Deployment</span>
+            </div>
+          </div>
+
+
+          <!-- Postman -->
+           <div class="skill-row">
+            <i class="devicon-postman-plain colored skill-tech-icon"></i>
+            
+            <div class="skill-info">
+              <strong>Postman</strong>
+              <span>API testing</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ================================================================
+           6. DEVELOPMENT ENVIRONMENTS
+           ================================================================ -->
+      <div class="skill-card">
+
+        <div class="skill-card-header">
+
+          <div class="skill-card-icon tools-icon">
+            ⚙
+          </div>
+
+          <h3>Development Environments</h3>
+
+        </div>
+
+
+        <div class="skill-list">
+
+          <!-- VS Code -->
+          <div class="skill-row">
+            <i class="devicon-vscode-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>VS Code</strong>
+              <span>Primary code editor</span>
+            </div>
+          </div>
+
+
+          <!-- IntelliJ -->
+          <div class="skill-row">
+            <i class="devicon-intellij-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>IntelliJ IDEA</strong>
+              <span>Java development</span>
+            </div>
+          </div>
+
+
+          <!-- Google Colab -->
+          <div class="skill-row">
+            <i class="devicon-googlecolab-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Google Colab</strong>
+              <span>Cloud-based development</span>
+            </div>
+          </div>
+
+
+          <!-- Jupyter -->
+          <div class="skill-row">
+            <i class="devicon-jupyter-plain colored skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>Jupyter Notebook</strong>
+              <span>Data analysis</span>
+            </div>
+          </div>
+
+
+          <!-- PyCharm -->
+          <div class="skill-row">
+            <i class="devicon-pycharm-plain skill-tech-icon"></i>
+
+            <div class="skill-info">
+              <strong>PyCharm</strong>
+              <span>Python development</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <!-- END SKILLS GRID -->
+
+
+  </div>
+</section>
+
+    <!-- ========================================================================
+         SECTION 6: PROJECTS SECTION
+         Features: Interactive Filter, Preview Mockup Images, Descriptions,
+                   Tech Badges, Live Demo & GitHub Repository Links
+         ======================================================================== -->
+    <section class="section" id="projects" aria-label="Featured Engineering Projects">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header">
+          <span class="section-badge">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A showcase of production-ready applications, open-source repositories, and system prototypes.</p>
+        </div>
+
+        <!-- Interactive Category Filter Buttons -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; DevOps</button>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: ShopSphere -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-1.svg" alt="ShopSphere E-Commerce Platform Mockup" class="project-thumb-img" loading="lazy">
+              <span class="project-category-tag">Full Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ShopSphere E-Commerce Platform</h3>
+              <p class="project-desc">
+                High-performance headless e-commerce store with instant product searching, Stripe Checkout integration, session-based cart management, and inventory synchronization.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/alexmorgan/shopsphere" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/alexmorgan/shopsphere" target="_blank" rel="noopener noreferrer" class="project-link project-link-repo" aria-label="GitHub Repository for ShopSphere">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: TaskFlow AI -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-2.svg" alt="TaskFlow AI Kanban Platform Mockup" class="project-thumb-img" loading="lazy">
+              <span class="project-category-tag">Frontend &amp; UI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TaskFlow AI Collaboration Board</h3>
+              <p class="project-desc">
+                Interactive real-time Kanban management application with drag-and-drop mechanics, automated AI sprint task summarization, keyboard shortcuts, and dark mode theming.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React 18</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">DnD-Kit</span>
+                <span class="tech-tag">Zustand</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">CSS Modules</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/alexmorgan/taskflow-ai" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/alexmorgan/taskflow-ai" target="_blank" rel="noopener noreferrer" class="project-link project-link-repo" aria-label="GitHub Repository for TaskFlow AI">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: NovaPay -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-3.svg" alt="NovaPay FinTech Analytics Dashboard Mockup" class="project-thumb-img" loading="lazy">
+              <span class="project-category-tag">Full Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NovaPay Realtime FinTech Engine</h3>
+              <p class="project-desc">
+                Financial analytics dashboard delivering low-latency transaction tracking, currency conversion calculations, SVG dynamic charting, and exportable financial audits.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">JWT Auth</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/alexmorgan/novapay-dashboard" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/alexmorgan/novapay-dashboard" target="_blank" rel="noopener noreferrer" class="project-link project-link-repo" aria-label="GitHub Repository for NovaPay">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: DevPulse -->
+          <article class="project-card" data-category="backend">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-4.svg" alt="DevPulse Cloud Infrastructure Mockup" class="project-thumb-img" loading="lazy">
+              <span class="project-category-tag">Backend &amp; DevOps</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DevPulse Cloud Health Monitor</h3>
+              <p class="project-desc">
+                Container monitoring daemon and telemetry collector. Aggregates CPU/Memory metrics across cluster nodes, streams live container logs, and issues Slack/Discord webhook alerts.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Docker Engine API</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Bash</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/alexmorgan/devpulse-monitor" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/alexmorgan/devpulse-monitor" target="_blank" rel="noopener noreferrer" class="project-link project-link-repo" aria-label="GitHub Repository for DevPulse">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 7: RESUME DOWNLOAD & PREVIEW CALLOUT
+         Features: Direct PDF download, preview in browser, file format info
+         ======================================================================== -->
+    <section class="section resume-section" id="resume" aria-label="Resume Download">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-info-box">
+            <span class="section-badge">Curriculum Vitae</span>
+            <h2 class="resume-card-title">Looking for a detailed breakdown?</h2>
+            <p class="resume-card-desc">
+              Download my complete, up-to-date resume in standardized PDF format. Includes comprehensive breakdown of technical skills, employment history, engineering accomplishments, and education.
+            </p>
+            <div class="resume-meta">
+              <div class="resume-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Format: PDF</span>
+              </div>
+              <div class="resume-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Updated: Latest Version</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume Actions -->
+          <div class="resume-actions-group">
+            <a href="assets/docs/resume.pdf" class="btn btn-primary download-resume-trigger" download="Sonali_Gautam_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download PDF Resume
+            </a>
+            <a href="assets/docs/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Preview in Browser
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 8: CONTACT SECTION
+         Features: Phone number, Email address, Location, Social Profiles (LinkedIn, GitHub),
+                   and Interactive Validated Contact Form with Toast Notification
+         ======================================================================== -->
+    <section class="section" id="contact" aria-label="Contact Information and Inquiries">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Build Something Meaningful</h2>
+          <p class="section-subtitle"> Whether you’re looking to collaborate on a project, discuss a job or internship
+  opportunity, or simply connect, I’d love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Information Cards -->
+          <div class="contact-info-panel">
+            
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Email Address</p>
+                <p class="contact-value">
+                  <a href="mailto:gautamsonali326@gmail.com">gautamsonali326@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone Number Card -->
+            <div class="contact-card">
+              <div class="contact-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Phone Number</p>
+                <p class="contact-value">
+                  <a href="tel:+919008536461">+91 9008536461</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-icon" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.12);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Bengaluru, Karnataka, India</p>
+              </div>
+            </div>
+
+            <!-- Clickable Profile Links Box -->
+            <div class="social-connect-box">
+              <h3 class="social-connect-title">Connect on Professional Networks</h3>
+              <div class="social-connect-buttons">
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/sonaligautam15" target="_blank" rel="noopener noreferrer" class="social-button">
+                  <div class="social-button-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn Profile</span>
+                  </div>
+                  <span>&rarr;</span>
+                </a>
+
+                <!-- GitHub Link -->
+                <a href="https://github.com/Sonali15396" target="_blank" rel="noopener noreferrer" class="social-button">
+                  <div class="social-button-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub Repositories</span>
+                  </div>
+                  <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Validated Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill out this quick form and I will get back to you within 24 hours.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="user_name" class="form-label">Full Name *</label>
+                  <input type="text" id="user_name" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+                  <span class="form-error">Please provide your name (at least 2 characters).</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="user_email" class="form-label">Email Address *</label>
+                  <input type="email" id="user_email" name="email" class="form-input" placeholder="e.g. jane@example.com" required>
+                  <span class="form-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="user_subject" class="form-label">Subject *</label>
+                <input type="text" id="user_subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+                <span class="form-error">Please enter a subject (minimum 3 characters).</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="user_message" class="form-label">Message *</label>
+                <textarea id="user_message" name="message" class="form-textarea" placeholder="Describe your project, team requirements, or questions..." required></textarea>
+                <span class="form-error">Please enter your message (at least 10 characters).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SECTION 9: FOOTER
+       Features: Brand summary, Navigation links, Copyright, Social Icons
+       ======================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div>
+          <a href="#home" class="nav-brand">
+            <img src="assets/images/favicon.svg" alt="SG Logo" class="nav-brand-logo" width="34" height="34">
+            <span>Sonali Gautam</span>
+          </a>
+          <p class="footer-brand-desc">
+            Full Stack Software Engineer committed to engineering performant, scalable, and beautifully designed web systems.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#education" class="footer-link">Academic Education</a></li>
+            <li><a href="#skills" class="footer-link">Technical Skills</a></li>
+            <li><a href="#projects" class="footer-link">Featured Projects</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Connections & Documents -->
+        <div>
+          <h4 class="footer-heading">Connect &amp; Resume</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/sonaligautam15" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/Sonali15396" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="mailto:gautamsonali326@gmail.com" class="footer-link">Direct Email</a></li>
+            <li><a href="assets/docs/resume.pdf" class="footer-link download-resume-trigger" download="Sonali_Gautam_Resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF Resume</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Sonali Gautam. Built with clean HTML5, CSS3, &amp; ES6 JavaScript. All rights reserved.</p>
+        <p>Crafted for speed, responsiveness, and zero-config deployment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING BACK-TO-TOP BUTTON
+       ======================================================================== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ======================================================================== -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ========================================================================
+       SECTION 10: ASK SONALI - AI PORTFOLIO CHATBOT
+       Features: Interactive floating launcher button, responsive glassmorphic
+                 chat window, question suggestions, rich responses, and typing simulation.
+       ======================================================================== -->
+  <!-- Floating Chatbot Launcher Button -->
+  <button id="chatbot-launcher" class="chatbot-launcher" aria-label="Open Ask Sonali Chatbot" aria-expanded="false">
+    <span class="chatbot-launcher-icon">✨</span>
+    <span class="launcher-text">Ask Sonali</span>
+    <span class="chatbot-launcher-pulse" title="Online"></span>
+  </button>
+
+  <!-- Chatbot Modal Window -->
+  <div id="chatbot-window" class="chatbot-window" role="dialog" aria-modal="true" aria-label="Ask Sonali Portfolio Assistant">
+    <!-- Header -->
+    <div class="chatbot-header">
+      <div class="chatbot-header-left">
+        <div class="chatbot-avatar-box">
+          <img src="assets/images/favicon.svg" alt="SG Logo" class="chatbot-avatar-img">
+          <span class="chatbot-status-indicator"></span>
+        </div>
+        <div class="chatbot-header-info">
+          <h4>Ask Sonali</h4>
+          <p><span style="color:#10b981;">●</span> Online • Portfolio AI</p>
+        </div>
+      </div>
+      <div class="chatbot-header-actions">
+        <button id="chatbot-clear" class="chatbot-action-btn" title="Clear conversation" aria-label="Clear chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+        <button id="chatbot-close" class="chatbot-action-btn" title="Close chat" aria-label="Close chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Messages Container -->
+    <div id="chatbot-messages" class="chatbot-messages" aria-live="polite"></div>
+
+    <!-- Quick Suggestion Chips -->
+    <div id="chatbot-chips" class="chatbot-chips-container">
+      <span class="chatbot-chips-title">Suggested questions:</span>
+      <button type="button" class="chat-chip" data-prompt="Who is Sonali?">👋 Who is Sonali?</button>
+      <button type="button" class="chat-chip" data-prompt="Tell me about your education">🎓 Education</button>
+      <button type="button" class="chat-chip" data-prompt="What are your technical skills?">💻 Skills</button>
+      <button type="button" class="chat-chip" data-prompt="Show me your projects">🚀 Projects</button>
+      <button type="button" class="chat-chip" data-prompt="Can I download your resume?">📄 Resume</button>
+      <button type="button" class="chat-chip" data-prompt="How can I contact Sonali?">📬 Contact</button>
+    </div>
+
+    <!-- Input Form -->
+    <form id="chatbot-form" class="chatbot-input-form">
+      <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Ask anything about Sonali..." autocomplete="off" required>
+      <button type="submit" id="chatbot-send" class="chatbot-send-btn" aria-label="Send message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <!-- JavaScript Application Entry -->
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
